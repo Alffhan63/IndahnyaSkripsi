@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    tools:context="com.example.alfhanrf.indahnyaskripsi.MainActivity">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Fungsi Bangunan Gedung"
+                        android:textSize="20dp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/colorAccent"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"></View>
+                    <TextView
+                        android:padding="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:text="Fungsi Gedung"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Spinner
+                        android:id="@+id/Spinnerfungsigedung"
+                        android:layout_width="match_parent"
+                        android:entries="@array/fungsi_gedung"
+                        android:layout_height="50dp" />
+
+                    <TextView
+                        android:padding="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:text="Jenis Gedung"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Spinner
+                        android:id="@+id/Spinnerfungsigedung1"
+                        android:spinnerMode="dialog"
+                        tools:listheader="Pilih Gedung"
+                        tools:listitem="@layout/list_multiline_textview"
+                        android:entries="@array/fungsi_gedung_hunian"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:padding="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:text="Jenis Fungsi"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Spinner
+                        android:id="@+id/Spinnerfungsigedung2"
+                        android:spinnerMode="dialog"
+                        tools:listheader="Pilih Jenis"
+                        tools:listitem="@layout/list_multiline_textview"
+                        android:entries="@array/fungsi_gedung_usaha_perkantoran"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <Button
+                        android:layout_marginTop="50dp"
+                    android:id="@+id/btnNext"
+                    android:text="Next"
+                    android:background="@drawable/shape_btn_login"
+                    android:layout_margin="16dp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+    <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_margin="8dp"-->
+                <!--android:elevation="8dp"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_margin="16dp"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<TextView-->
+                        <!--android:text="Pengupahan"-->
+                        <!--android:textSize="18dp"-->
+                        <!--android:textColor="@android:color/black"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+                    <!--<View-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:layout_marginBottom="8dp"-->
+                        <!--android:background="@color/colorAccent"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"></View>-->
+                    <!--<TextView-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:text="UMP"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+                    <!--<RadioGroup-->
+                        <!--android:id="@+id/rgUMP"-->
+                        <!--android:layout_marginTop="4dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rbYesUmp"-->
+                            <!--android:text="Melaksanakan"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content" />-->
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rbNoUmp"-->
+                            <!--android:text="Tidak Melaksanakan"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content" />-->
+                    <!--</RadioGroup>-->
+                    <!--<TextView-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:text="UMSP"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+                    <!--<RadioGroup-->
+                        <!--android:id="@+id/rgUMSP"-->
+                        <!--android:layout_marginTop="4dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rbYesUmsp"-->
+                            <!--android:text="Melaksanakan"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content" />-->
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rbNoUmsp"-->
+                            <!--android:text="Tidak Melaksanakan"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content" />-->
+                    <!--</RadioGroup>-->
+
+                    <!--<TextView-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:text="Struktur Skala Upah"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+                    <!--<RadioGroup-->
+                        <!--android:id="@+id/rgSkala"-->
+                        <!--android:layout_marginTop="4dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rbYesSkala"-->
+                            <!--android:text="Melaksanakan"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content" />-->
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rbNoSkala"-->
+                            <!--android:text="Tidak Melaksanakan"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content" />-->
+                    <!--</RadioGroup>-->
+                <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_margin="8dp"-->
+                <!--android:elevation="8dp"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_margin="16dp"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<TextView-->
+                        <!--android:text="Jaminan Sosial"-->
+                        <!--android:textSize="18dp"-->
+                        <!--android:textColor="@android:color/black"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+                    <!--<View-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:layout_marginBottom="8dp"-->
+                        <!--android:background="@color/colorAccent"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"></View>-->
+                    <!--<TextView-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:text="BPJS Ketenagakerjaan"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+                    <!--<RadioGroup-->
+                        <!--android:id="@+id/rgKeteg"-->
+                        <!--android:layout_marginTop="4dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rbYesKeteg"-->
+                            <!--android:text="Melaksanakan"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content" />-->
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rbNoKeteg"-->
+                            <!--android:text="Tidak Melaksanakan"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content" />-->
+                    <!--</RadioGroup>-->
+                    <!--<TextView-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:text="BPJS Kesehatan"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+                    <!--<RadioGroup-->
+                        <!--android:id="@+id/rgKes"-->
+                        <!--android:layout_marginTop="4dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rbYesKes"-->
+                            <!--android:text="Melaksanakan"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content" />-->
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rbNoKes"-->
+                            <!--android:text="Tidak Melaksanakan"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content" />-->
+                    <!--</RadioGroup>-->
+                    <!--<TextView-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:text="Jaminan Sosial Hubungan Kerja Diluar Jam Kerja"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+                    <!--<RadioGroup-->
+                        <!--android:id="@+id/rgLuarJam"-->
+                        <!--android:layout_marginTop="4dp"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rbYesLuarJam"-->
+                            <!--android:text="Melaksanakan"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content" />-->
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/rbNoLuarJam"-->
+                            <!--android:text="Tidak Melaksanakan"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content" />-->
+                    <!--</RadioGroup>-->
+                <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_margin="8dp"-->
+                <!--android:elevation="8dp"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_margin="16dp"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<TextView-->
+                        <!--android:text="Penjelasan Tambahan"-->
+                        <!--android:textSize="18dp"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textColor="@android:color/black"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+                    <!--<View-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:layout_marginBottom="8dp"-->
+                        <!--android:background="@color/colorAccent"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"></View>-->
+                    <!--<android.support.design.widget.TextInputLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<android.support.design.widget.TextInputEditText-->
+                            <!--android:id="@+id/txtFormTambahan"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:hint="Penjelasan Tambahan (Opsional)" />-->
+                    <!--</android.support.design.widget.TextInputLayout>-->
+                <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+            <!--<Button-->
+                <!--android:id="@+id/btnInputData"-->
+    <!--android:text="Input Data"-->
+    <!--android:background="@drawable/shape_btn_login"-->
+    <!--android:layout_margin="16dp"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+

@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">Survey Bangun Gedung</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Aldino</string>
+    <string name="nav_header_subtitle">660490</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Refresh</string>
+    <string name="action_all">Semua Data</string>
+    <string name="action_pertahun">Pertahun</string>
+    <string name="action_range_tahun">Range Tahun</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+
+    <string-array name="fungsi_gedung">
+        <item>Fungsi Hunian</item>
+        <item>Fungsi Keagamaan</item>
+        <item>Fungsi Usaha</item>
+        <item>Fungsi Budaya</item>
+        <item>Fungsi Khusus</item>
+        <item>Fungsi campuran</item>
+    </string-array>
+
+    <string-array name="fungsi_gedung_hunian">
+        <item>Rumah Tinggal Tunggal</item>
+        <item>Rumah Tinggal Darat</item>
+        <item>Rumah Tinggal Susun</item>
+        <item>Rumah Tinggal Sementara</item>
+    </string-array>
+
+    <string-array name="fungsi_gedung_keagamaan">
+        <item>Masjid</item>
+        <item>Musholla</item>
+        <item>Gereja</item>
+        <item>Kepel</item>
+        <item>Wihara dan Kelenteng</item>
+    </string-array>
+
+    <string-array name="fungsi_gedung_usaha">
+        <item>Bangunan Perkantoran</item>
+        <item>Bangunan Perdagangan</item>
+        <item>Bangunan Industri</item>
+        <item>Bangunan Perhotelan</item>
+        <item>B. Wisata dan Rekreasi</item>
+        <item>Bangunan Terminal</item>
+        <item>B. Tepat Penyimpanan</item>
+    </string-array>
+
+    <string-array name="fungsi_gedung_budaya">
+        <item>Bangunan Pendidikan</item>
+        <item>B. Pelayanan Kesehatan</item>
+        <item>Bangunan Kebudayaan</item>
+    </string-array>
+
+
+    <string-array name="fungsi_gedung_usaha_perkantoran">
+        <item>Pemerintah</item>
+        <item>Niaga</item>
+    </string-array>
+    
+    <string-array name="fungsi_gedung_usaha_perdagangan">
+        <item>Pasar</item>
+        <item>Pertokoan Pusat Perbelanjaan</item>
+        <item>Mall</item>
+    </string-array>
+    
+    <string-array name="fungsi_gedung_usaha_perindustrian">
+        <item>Industri Kecil</item>
+        <item>Industri Sedang</item>
+        <item>Industri Besar</item>
+    </string-array>
+
+    <string-array name="fungsi_gedung_usaha_perhotelan">
+        <item>Hotel</item>
+        <item>Motel</item>
+        <item>Hostel</item>
+        <item>Penginapan</item>
+    </string-array>
+
+    <string-array name="fungsi_gedung_usaha_wisatarekreasi">
+        <item>Tempat Rekreasi</item>
+        <item>Bioskop</item>
+    </string-array>
+    
+    <string-array name="fungsi_gedung_usaha_terminal">
+        <item>Stasiun Kereta</item>
+        <item>Terminal Bus</item>
+        <item>Terminal Udara</item>
+        <item>Halte Bus</item>
+        <item>Pelabuhan Laut</item>
+    </string-array>
+
+    <string-array name="fungsi_gedung_usaha_penyimpanan">
+        <item>Gudang</item>
+        <item>Gedung Parkir</item>
+    </string-array>
+    
+    <string-array name="fungsi_gedung_budaya_pendidikan">
+        <item>TK</item>
+        <item>SD</item>
+        <item>SMP</item>
+        <item>SMA</item>
+        <item>Perguruan Tinggi</item>
+    </string-array>
+
+    <string-array name="fungsi_gedung_budaya_kesehatan">
+        <item>Puskesmas</item>
+        <item>Poliklinik</item>
+        <item>Rumah Bersalin</item>
+        <item>Rumah Sakit Kelas A</item>
+        <item>Rumah Sakit Kelas B</item>
+        <item>Rumah Sakit Kelas C</item>
+    </string-array>
+
+    <string-array name="fungsi_gedung_budaya_budaya">
+        <item>Museum</item>
+        <item>Gedung Kesenian</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
