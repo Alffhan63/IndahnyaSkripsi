@@ -1,14 +1,17 @@
 package com.example.alfhanrf.indahnyaskripsi;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 public class Spinner_fungsi extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+
 
 
     @Override
@@ -16,8 +19,12 @@ public class Spinner_fungsi extends AppCompatActivity implements AdapterView.OnI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spinner_fungsi);
 
+        Button btnNext = (Button) findViewById(R.id.btnNext);
 
-        Spinner fungsigedung = (Spinner) findViewById(R.id.Spinnerfungsigedung);
+
+
+
+        final Spinner fungsigedung = (Spinner) findViewById(R.id.Spinnerfungsigedung);
         fungsigedung.setOnItemSelectedListener(this);
 
          ArrayAdapter<CharSequence> datafungsi = ArrayAdapter.createFromResource(this, R.array.fungsi_gedung,
@@ -83,24 +90,29 @@ public class Spinner_fungsi extends AppCompatActivity implements AdapterView.OnI
         datafungsibag2budayakebudayaan.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
 
-
+        Spinnerfungsigedung1.setEnabled(true);
         Spinnerfungsigedung2.setEnabled(false);
+
 
         fungsigedung.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if(position == 0){
+                    Spinnerfungsigedung1.setEnabled(true);
                     Spinnerfungsigedung1.setAdapter(datafungsibag1hunian);
                     Spinnerfungsigedung2.setEnabled(false);
                 } else if(position == 1){
+                    Spinnerfungsigedung1.setEnabled(true);
                     Spinnerfungsigedung1.setAdapter(datafungsibag1keagamaan);
                     Spinnerfungsigedung2.setEnabled(false);
                 } else if(position == 2) {
+                    Spinnerfungsigedung1.setEnabled(true);
                     Spinnerfungsigedung1.setAdapter(datafungsibag1usaha);
-                    Spinnerfungsigedung2.setEnabled(false);
+                    Spinnerfungsigedung2.setEnabled(true);
                 } else if (position == 3){
+                    Spinnerfungsigedung1.setEnabled(true);
                     Spinnerfungsigedung1.setAdapter(datafungsibag1budaya);
-                    Spinnerfungsigedung2.setEnabled(false);
+                    Spinnerfungsigedung2.setEnabled(true);
                 }else if (position == 4) {
                     Spinnerfungsigedung1.setEnabled(false);
                     Spinnerfungsigedung2.setEnabled(false);
@@ -130,7 +142,7 @@ public class Spinner_fungsi extends AppCompatActivity implements AdapterView.OnI
                 String penyimpanan = "B. Tepat Penyimpanan";
                 String pendidikan = "Bangunan Pendidikan";
                 String kesehatan = "B. Pelayanan Kesehatan";
-                String kebudayaan = "Bangunan Kebuadayaan";
+                String kebudayaan = "Bangunan Kebudayaan";
                 String text = Spinnerfungsigedung1.getSelectedItem().toString();
                 if( text.equals(kantor)){
                     Spinnerfungsigedung2.setEnabled(true);
@@ -165,8 +177,44 @@ public class Spinner_fungsi extends AppCompatActivity implements AdapterView.OnI
                 }
             }
 
+
+
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        //-----------------------------------------------------Button Next
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String hunian = "Fungsi Hunian";
+                String agama = "Fungsi Keagamaan";
+                String usaha = "Fungsi Usaha";
+                String budaya = "Fungsi Budaya";
+                String khusus = "Fungsi Khusus";
+                String campuran = "Fungsi Campuran";
+                String text = fungsigedung.getSelectedItem().toString();
+                if(text.equals(hunian)){
+                    Intent formhunian = new Intent(Spinner_fungsi.this, Act_form_hunian.class);
+                    Spinner_fungsi.this.startActivity(formhunian);
+                } else if(text.equals(agama)){
+                    Intent formagama = new Intent(Spinner_fungsi.this, Act_form_keagamaan.class);
+                    Spinner_fungsi.this.startActivity(formagama);
+                }else if(text.equals(usaha)){
+                    Intent formusaha = new Intent(Spinner_fungsi.this, Act_form_usaha.class);
+                    Spinner_fungsi.this.startActivity(formusaha);
+                }else if(text.equals(budaya)) {
+                    Intent formbudaya = new Intent(Spinner_fungsi.this, Act_form_budaya.class);
+                    Spinner_fungsi.this.startActivity(formbudaya);
+                }else if(text.equals(khusus)) {
+                    Intent formkhusus = new Intent(Spinner_fungsi.this, Act_form_khusus.class);
+                    Spinner_fungsi.this.startActivity(formkhusus);
+                }else if(text.equals(campuran)) {
+                    Intent formcampuran = new Intent(Spinner_fungsi.this, Act_form_campuran.class);
+                    Spinner_fungsi.this.startActivity(formcampuran);
+                }
 
             }
         });
@@ -181,4 +229,6 @@ public class Spinner_fungsi extends AppCompatActivity implements AdapterView.OnI
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
+
 }

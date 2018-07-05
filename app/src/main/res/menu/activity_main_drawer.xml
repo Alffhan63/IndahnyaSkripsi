@@ -7,6 +7,12 @@
         <item
             android:icon="@drawable/ic_menu_input"
             android:checked="true"
+            android:id="@+id/atas"
+            android:title="atas" />
+
+        <item
+            android:icon="@drawable/ic_menu_input"
+            android:checked="true"
             android:id="@+id/nav_input_data"
             android:title="Survey Gedung" />
         <item

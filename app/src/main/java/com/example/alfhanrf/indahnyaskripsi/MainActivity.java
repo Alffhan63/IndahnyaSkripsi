@@ -78,8 +78,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             MainActivity.this.startActivity(surveybangun);
 
         } else if (id == R.id.nav_list_survey) {
-            Intent daftarbangungedung = new Intent(MainActivity.this, Act_form_hunian.class);
-            MainActivity.this.startActivity(daftarbangungedung);
+
 
         } else if (id == R.id.nav_history) {
 
