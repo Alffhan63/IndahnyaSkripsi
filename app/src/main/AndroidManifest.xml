@@ -34,8 +34,6 @@
         <activity android:name=".Act_form_keagamaan" />
         <activity android:name=".Act_form_usaha" />
         <activity android:name=".Act_form_budaya" />
-        <activity android:name=".Act_form_khusus" />
-        <activity android:name=".Act_form_campuran" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -44,13 +42,16 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/. 
         -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+         <meta-data
+         android:name="com.google.android.geo.API_KEY"
+         android:value="@string/google_maps_key" />
 
-        <activity
-            android:name=".map_bangunan"
-            android:label="@string/title_activity_map_bangunan"></activity>
+
+         <activity
+         android:name=".map_bangunan"
+         android:label="@string/title_activity_map_bangunan"></activity>
+
+        <activity android:name=".Act_form_survey"></activity>
     </application>
 
 </manifest>

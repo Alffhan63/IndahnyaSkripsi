@@ -22,8 +22,6 @@ public class Spinner_fungsi extends AppCompatActivity implements AdapterView.OnI
         Button btnNext = (Button) findViewById(R.id.btnNext);
 
 
-
-
         final Spinner fungsigedung = (Spinner) findViewById(R.id.Spinnerfungsigedung);
         fungsigedung.setOnItemSelectedListener(this);
 
@@ -193,27 +191,19 @@ public class Spinner_fungsi extends AppCompatActivity implements AdapterView.OnI
                 String agama = "Fungsi Keagamaan";
                 String usaha = "Fungsi Usaha";
                 String budaya = "Fungsi Budaya";
-                String khusus = "Fungsi Khusus";
-                String campuran = "Fungsi Campuran";
                 String text = fungsigedung.getSelectedItem().toString();
                 if(text.equals(hunian)){
-                    Intent formhunian = new Intent(Spinner_fungsi.this, Act_form_hunian.class);
+                    Intent formhunian = new Intent(Spinner_fungsi.this, Act_form_survey.class);
                     Spinner_fungsi.this.startActivity(formhunian);
                 } else if(text.equals(agama)){
-                    Intent formagama = new Intent(Spinner_fungsi.this, Act_form_keagamaan.class);
+                    Intent formagama = new Intent(Spinner_fungsi.this,  Act_form_survey.class);
                     Spinner_fungsi.this.startActivity(formagama);
                 }else if(text.equals(usaha)){
                     Intent formusaha = new Intent(Spinner_fungsi.this, Act_form_usaha.class);
                     Spinner_fungsi.this.startActivity(formusaha);
                 }else if(text.equals(budaya)) {
-                    Intent formbudaya = new Intent(Spinner_fungsi.this, Act_form_budaya.class);
+                    Intent formbudaya = new Intent(Spinner_fungsi.this, Act_form_survey.class);
                     Spinner_fungsi.this.startActivity(formbudaya);
-                }else if(text.equals(khusus)) {
-                    Intent formkhusus = new Intent(Spinner_fungsi.this, Act_form_khusus.class);
-                    Spinner_fungsi.this.startActivity(formkhusus);
-                }else if(text.equals(campuran)) {
-                    Intent formcampuran = new Intent(Spinner_fungsi.this, Act_form_campuran.class);
-                    Spinner_fungsi.this.startActivity(formcampuran);
                 }
 
             }
